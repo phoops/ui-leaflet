@@ -1,13 +1,13 @@
 {
-  "org": "angular-ui",
-  "author": "https://github.com/angular-ui/ui-leaflet/graphs/contributors",
+  "org": "phoops",
+  "author": "Phoops srl",
   "name": "ui-leaflet",
   "description": "ui-leaflet - An AngularJS directive to easily interact with Leaflet maps",
-  "version": "1.0.0",
-  "homepage": "http://angular-ui.github.io/ui-leaflet/",
+  "version": "1.0.1",
+  "homepage": "http://github.com/phoops/ui-leaflet/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-ui/ui-leaflet"
+    "url": "https://github.com/phoops/ui-leaflet/"
   },
   "scripts": {
     "test": "grunt travis --verbose",

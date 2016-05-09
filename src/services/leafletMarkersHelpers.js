@@ -61,6 +61,14 @@ angular.module('ui-leaflet').service('leafletMarkersHelpers', function ($rootSco
             return new L.MakiMarkers.icon(iconData);
         }
 
+        if (isDefined(iconData) && isDefined(iconData.type) && iconData.type === 'muvMarker') {
+          if (angular.isDefined(L.MuvMarkers) && angular.isDefined(L.MuvMarkers.Icon)) {
+            return new L.MuvMarkers.icon(iconData);
+          } else {
+            $log.error(errorHeader + 'The MuvMarkers Plugin is not loaded.');
+          }
+        }
+
         if (isDefined(iconData) && isDefined(iconData.type) && iconData.type === 'extraMarker') {
             if (!ExtraMarkersPlugin.isLoaded()) {
                 $log.error(errorHeader + 'The ExtraMarkers Plugin is not loaded.');
